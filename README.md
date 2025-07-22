@@ -1,57 +1,121 @@
-<h1 align="center">Frontend Mentor Challenges com Flutter Web</h1>
+# Frontend Mentor - Contact Form Solution
 
-<p align="center"><img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/></p>
+Este projeto é uma solução para o desafio [Contact form](https://www.frontendmentor.io/challenges/contact-form--G-hYlqKJj) do Frontend Mentor. O objetivo foi desenvolver um formulário funcional, acessível e responsivo, seguindo boas práticas de desenvolvimento com Flutter Web e Dart.
 
-📦 Repositório com soluções de desafios do [Frontend Mentor](https://www.frontendmentor.io/) desenvolvidas em **Flutter Web** e **Dart**.
+## Tabela de Conteúdos
 
-> Este projeto tem como objetivo aplicar e demonstrar boas práticas de desenvolvimento front-end utilizando Flutter para web, com foco em acessibilidade, responsividade, organização de código e reuso de componentes.
+- [Visão Geral](#visão-geral)
+  - [O Desafio](#o-desafio)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [Processo de Desenvolvimento](#processo-de-desenvolvimento)
+  - [Tecnologias Utilizadas](#tecnologias-utilizadas)
+  - [O que Aprendi](#o-que-aprendi)
+  - [Desenvolvimento Contínuo](#desenvolvimento-contínuo)
+  - [Recursos Úteis](#recursos-úteis)
+- [Autora](#autora)
 
----
+## Visão Geral
 
-## 🧪 Tecnologias Utilizadas
+### O Desafio
 
-![Flutter](https://img.shields.io/badge/Flutter-3.22.3-blue)
-![Firebase](https://img.shields.io/badge/Firebase-Firestore-orange)
-![License](https://img.shields.io/badge/Propriedade-Privada-red)
+Usuários devem ser capazes de:
 
-- [Flutter Web](https://flutter.dev) — Framework para construção da interface
-- [Dart](https://dart.dev) — Linguagem de programação
-- Google Fonts via `google_fonts` package
----
+- Preencher o formulário e ver uma mensagem de sucesso (toast) ao enviar corretamente
+- Ver mensagens de erro se:
+  - Um campo obrigatório for deixado em branco
+  - O e-mail estiver em formato inválido
+- Preencher o formulário usando apenas o teclado
+- Receber feedback acessível (leitores de tela)
+- Ver o layout adaptado para diferentes tamanhos de tela
+- Ver estados de foco e hover nos elementos interativos
 
-## 📁 Estrutura do Repositório
+### Screenshot
 
-Cada pasta representa uma solução individual de desafio, com seu próprio README:
+<p align="center">
+<img width="200" height="910" alt="image-3" src="https://github.com/user-attachments/assets/f0a00d84-1010-4fa1-8a3e-eb6c8e4c7e89" />
 
-```
-📦 frontend-mentor-flutter/
- ├── 📂 contact-form/
- │    ├── README.md
- │    ├── lib/
- │    └── pubspec.yaml
- ├── 📂 profile-card/
- ├── 📂 newsletter-signup/
- └── README.md (este arquivo)
-```
+<img width="750" height="937" alt="image-2" src="https://github.com/user-attachments/assets/85ae73a8-bc2d-4cbd-a412-8bdeec306592" />
+</p>
 
----
+### Links
 
-## 📌 Funcionalidades Gerais das Soluções
+- [Repositório no GitHub](https://github.com/JennieOliveira99/FrontEndMentor)
+- [Live site (em breve)](https://your-live-site-url.com)
 
-- Interfaces fiéis aos layouts propostos no Frontend Mentor
-- Formulários com validação e feedbacks dinâmicos
-- Componentes reutilizáveis (botões, campos, títulos)
-- Navegação com teclado e leitores de tela
-- Design responsivo para diversos tamanhos de tela
-- Temas customizados e fontes externas
+## Processo de Desenvolvimento
+
+### Tecnologias Utilizadas
+
+- Flutter Web
+- Dart
+- Temas personalizados (Custom Theme)
+- Widgets reutilizáveis
+- Boas práticas para evitar código repetido
+- Formulários com validação
+- Fontes externas importadas (custom fonts)
+- Responsividade
+
+### O que Aprendi
+
+### 🧱 Fundamentos de Layout
+ - Scaffold
+ - Padding, EdgeInsets, SizedBox
+ - Column e Row
+ - Expanded
+ - Container com BoxDecoration
+ - Align, CrossAxisAlignment, MainAxisAlignment
+ - ConstrainedBox
+
+### 🧑‍💻 Widgets de Entrada
+- TextField
+- TextFormField
+- Checkbox
+- Radio
+- Form (estrutura para validação)
+
+### 🎨 Estilização
+- OutlineInputBorder
+- Border.all, BorderRadius.circular
+- Cores personalizadas com Color e Theme
+- BoxDecoration
+
+### 🧩 Componentes Personalizados
+- CustomElevatedButton (botão criado por você)
+- CustomTitleText (provavelmente um wrapper para Text)
+- CustomTheme (tema personalizado com ThemeData)
+
+### 📱 Responsividade
+- MediaQuery.of(context).size.width (para detectar se é mobile)
+- LayoutBuilder (não obrigatório, mas recomendado em ajustes locais)
+- Lógica condicional isMobile ? WidgetA : WidgetB
+- Separação entre FormPageDesktop e FormPageMobile
+- SingleChildScrollView para evitar overflow no mobile
+
+### 🚀 Boas Práticas
+- Separação de responsabilidades em arquivos
+- Organização de pastas
+- Uso de StatelessWidget e StatefulWidget
+- Lógica de setState para atualizar estado de Radio e Checkbox
+
+### Desenvolvimento Contínuo
+
+Próximas etapas:
+
 - Integração com Firebase
----
+- Toasts de sucesso
+- Mensagens de erro dinâmicas nos formulários
+- Melhorias na acessibilidade
+- Animações suaves nas interações
 
+### Recursos Úteis
 
+- [Documentação oficial do Flutter](https://docs.flutter.dev/)
+- [Google Fonts para Flutter](https://pub.dev/packages/google_fonts)
+- [Material Design guidelines](https://m3.material.io/)
 
----
+## Autora
 
-## ✍️ Autora
-
-**Jennyfer Alvim de Oliveira**  
-[GitHub](https://github.com/JennieOliveira99) | [Frontend Mentor](https://www.frontendmentor.io/profile/JennieOliveira99)
+- Nome: **Jennyfer Alvim de Oliveira**
+- GitHub: [JennieOliveira99](https://github.com/JennieOliveira99)
+- Frontend Mentor: [@JennieOliveira99](https://www.frontendmentor.io/profile/JennieOliveira99)
